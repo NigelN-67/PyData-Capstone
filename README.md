@@ -14,16 +14,18 @@ This project delivers a high-performance data dashboard that identifies "Transit
 ---
 
 ## Tools & Technologies Used
-# NumPy & Pandas (The Engine)
-* Data Cleaning: Handled missing GPS signals and aligned disparate datasets
-* Vectorized Math: Used NumPy broadcasting to calculate distances between 10,000+ points and transit hubs instantly 
-* Time Series: Analyzed "Rush Hour" patterns to predict when reliability will drop
-  
-# GeoPandas (The Map)
-* Spatial Joins: Layered population density over 500m "walking-radius" buffers (3.4).
-* CRS Management: Ensured all maps were scaled accurately for mmetric measurements (3.3).
-* Spatial Overlays: Combined live traffic "clog" zones with transit stop locations (3.4).
+# NumPy & Pandas — Data Processing Engine
+* Data Cleaning: Addressed missing GPS data and harmonized multiple datasets for consistent analysis.
+* Efficient Computation: Employed NumPy’s vectorized operations to quickly compute distances between over 10,000 locations and transit hubs.
+* Time Series Analysis: Leveraged Pandas to examine rush hour trends and forecast periods of decreased transit reliability.
 
-# Matplotlib & Seaborn (The Insights)
-* Heatmaps: Visualized real-time "Danger Zones" where traffic is highest (3.2).
-* Subplots: Compared morning vs. evening transit reliability side-by-side (3.1).
+# GeoPandas — Spatial Analysis & Mapping
+* Spatial Joins: Mapped population density within 500-meter walkable buffers around transit stops to highlight areas of concern.
+* Coordinate Reference Systems (CRS): Standardized map projections to ensure accurate metric-based measurements across all spatial data.
+* Spatial Overlays: Integrated live traffic congestion data with transit infrastructure to identify zones where delays render transit inaccessible.
+
+# Matplotlib & Seaborn — Visualization & Insights
+* Heatmaps: Illustrated real-time congestion “danger zones,” spotlighting areas of critical traffic buildup.
+* Comparative Subplots: Enabled side-by-side visualization of transit reliability during different times of day, such as morning and evening rush hours, to reveal temporal patterns and bottlenecks.
+
+---
