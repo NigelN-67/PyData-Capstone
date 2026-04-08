@@ -29,3 +29,45 @@ This project delivers a high-performance data dashboard that identifies "Transit
 * Comparative Subplots: Enabled side-by-side visualization of transit reliability during different times of day, such as morning and evening rush hours, to reveal temporal patterns and bottlenecks.
 
 ---
+
+## Project Workflow
+
+1. Static Mapping: Loading city boundaries and transit stop coordinates 
+2. Desert Analysis: Identifying high-population areas with zero transit access 
+3. Live Ingestion: Pulling real-time traffic speeds via API 
+4. Reliability Scoring: Calculating the "Transit Reliability Index" (Scheduled vs. Actual)
+
+## Key Features
+
+* Live Transit Desert Map: Updates to show which areas are currently "cut off."
+* Real-Time Congestion Tracker: Overlays live traffic speeds onto the transit grid.
+* The Reliability Index: A score for every neighborhood based on actual commute times.
+* Bottleneck Heatmaps: Identifies the exact intersections causing city-wide delays.
+
+---
+
+## Data Sources
+
+This project integrates high-quality datasets to model both static transit accessibility and real-time traffic conditions.
+
+# Real-Time Traffic
+* HERE Technologies – Real-time traffic flow, congestion levels, and incident data used to dynamically adjust travel times.
+  
+# Public Transport
+* Digital Matatus Project – Primary dataset for Nairobi matatu routes and stops (GTFS-like structure), enabling accurate transit mapping in the absence of official feeds.
+  
+# Population Density
+* WorldPop – High-resolution population grids used to identify high-density underserved areas.
+
+# Road Network
+* OpenStreetMap – Road networks and geographic features, accessed via OSMnx for spatial analysis.
+
+---
+
+## Key Insights 
+
+
+
+Author
+Nigel Mirambo
+Python Data Analysis Capstone
